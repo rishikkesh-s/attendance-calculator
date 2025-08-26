@@ -1,0 +1,106 @@
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+    }
+    h1 {
+      margin-bottom: 25px;
+      font-weight: 500; /* less bold */
+      text-align: center;
+      color: #ffffff;
+    }
+    h1 span {
+      color: #ffc107; /* yellow highlight */
+      font-weight: bold;
+    }
+    .settings-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+    .attendance-row {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 12px 8px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .attendance-row .sn {
+      width: 50px;
+      text-align: center;
+      font-weight: bold;
+      color: #ffc107;
+    }
+    .attendance-row input {
+      flex: 1;
+      padding: 6px;
+      text-align: center;
+      border-radius: 6px;
+      border: none;
+      background: #f8f9fa;
+      color: #212529;
+      font-weight: 500;
+    }
+    .btn-custom {
+      margin-top: 15px;
+      background-color: #ff6f61;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-custom:hover {
+      background-color: #e85c50;
+    }
+
+  #helpBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #ffc107;
+    color: #212529;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+
+  #helpPanel {
+    position: fixed;
+    top: 0;
+    right: -350px; /* hidden by default */
+    width: 300px;
+    height: 100%;
+    background: #f8f9fa;
+    color: #212529;
+    padding: 20px;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+    transition: right 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  #helpPanel h4 {
+    margin-top: 0;
+    color: #2a5298;
+  }
+
+  #helpPanel ul {
+    padding-left: 20px;
+  }
